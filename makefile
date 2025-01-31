@@ -81,5 +81,8 @@ extrator-csv:
 change-directory:
 	cd /media/gnobisp/Novo\ volume/Gustavo/SistemadeDados/code-challenge
 
+discard-changes:
+	git checkout -- .
+
 csv-config:
 	meltano config tap-csv set files "$(cat /media/gnobisp/Novo\ volume/Gustavo/SistemadeDados/code-challenge/my-meltanoCSV-project/.meltano/extractors/tap-csv/venv/tap-csv-config.json | jq -c '.files')"
