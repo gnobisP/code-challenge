@@ -44,23 +44,21 @@ create-project-github:
 	meltano init my-meltano-project && \
 	cd my-meltano-project 
 
-
 create-tap-postgres:
-    . /media/gnobisp/Novo\ volume/Gustavo/SistemadeDados/code-challenge/venv/bin/activate && \
-    meltano init metano-project && \
-    cd metano-project && \
-    meltano add extractor tap-postgres && \
-    meltano config tap-postgres set host localhost && \
-    meltano config tap-postgres set port 5432 && \
-    meltano config tap-postgres set dbname northwind && \
-    meltano config tap-postgres set user northwind_user && \
-    meltano config tap-postgres set password thewindisblowing && \
-    meltano config tap-postgres set database northwind && \
-    meltano add loader target-jsonl && \
-    meltano config target-jsonl set destination_path /media/gnobisp/Novo\ volume/Gustavo/SistemadeDados/code-challenge/output/ && \
-    meltano elt tap-postgres target-jsonl
+	. /media/gnobisp/Novo\ volume/Gustavo/SistemadeDados/code-challenge/venv/bin/activate && \
+	meltano init metano-project && \
+	cd metano-project && \
+	meltano add extractor tap-postgres && \
+	meltano config tap-postgres set host localhost && \
+	meltano config tap-postgres set port 5432 && \
+	meltano config tap-postgres set dbname northwind && \
+	meltano config tap-postgres set user northwind_user && \
+	meltano config tap-postgres set password thewindisblowing && \
+	meltano config tap-postgres set database northwind && \
+	meltano add loader target-jsonl && \
+	meltano config target-jsonl set destination_path /media/gnobisp/Novo\ volume/Gustavo/SistemadeDados/code-challenge/output/ && \
+	meltano elt tap-postgres target-jsonl
 
-	
 create-tap-csv:
 	. /media/gnobisp/Novo\ volume/Gustavo/SistemadeDados/code-challenge/venv/bin/activate && \
 	meltano init metano-project && \
@@ -70,6 +68,15 @@ create-tap-csv:
 	meltano add loader target-jsonl && \
 	meltano config target-jsonl set destination_path /media/gnobisp/Novo\ volume/Gustavo/SistemadeDados/code-challenge/output/ && \
 	meltano elt tap-csv target-jsonl
+
+
+extrator-csv:
+	. /media/gnobisp/Novo\ volume/Gustavo/SistemadeDados/code-challenge/venv/bin/activate && \
+	cd metano-project && \
+	meltano add extractor tap-csv && \
+	meltano init metano-project && \
+	meltano elt tap-csv target-jsonl
+
 
 change-directory:
 	cd /media/gnobisp/Novo\ volume/Gustavo/SistemadeDados/code-challenge
