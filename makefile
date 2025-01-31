@@ -84,7 +84,7 @@ change-directory:
 discard-changes:
 	git checkout -- .
 	git reset --hard HEAD
-    git clean -fd
+	git clean -fd
 
 csv-config:
 	meltano config tap-csv set files "$(cat /media/gnobisp/Novo\ volume/Gustavo/SistemadeDados/code-challenge/my-meltanoCSV-project/.meltano/extractors/tap-csv/venv/tap-csv-config.json | jq -c '.files')"
