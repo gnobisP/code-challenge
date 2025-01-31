@@ -1,0 +1,25 @@
+version: 1
+default_environment: dev
+project_id: 93b7eda7-830e-4e22-935f-90386ca8cca9
+environments:
+- name: dev
+- name: staging
+- name: prod
+plugins:
+  extractors:
+  - name: tap-csv
+    variant: meltanolabs
+    pip_url: git+https://github.com/MeltanoLabs/tap-csv.git
+    config:
+      files:
+      - entity: order_details
+        path: /media/gnobisp/Novo volume/Gustavo/SistemadeDados/code-challenge/data/order_details.csv
+        keys:
+        - order_id
+        format: csv
+  loaders:
+  - name: target-jsonl
+    variant: andyh1203
+    pip_url: target-jsonl
+    config:
+      destination_path: /media/gnobisp/Novo volume/Gustavo/SistemadeDados/code-challenge/output/
