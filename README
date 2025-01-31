@@ -1,0 +1,47 @@
+--Criando um custom extrator
+https://docs.meltano.com/tutorials/custom-extractor/
+
+--Criando um csv extrator
+https://hub.meltano.com/extractors/tap-csv/
+https://www.youtube.com/watch?v=fEDw2U5js9E&t=247s
+
+
+Crie um arquivo JSON chamado tap-csv-config.json com o seguinte conteúdo:
+Local
+.meltano/extractors/tap-csv/.meltano/extractors/tap-csv/tap-csv-config.json
+
+csv config
+{
+  "files": [
+    {
+      "entity": "order_details",
+      "path": "/caminho/para/seu/arquivo.csv",
+      "keys": ["order_id"],
+      "format": "csv"
+    }
+  ]
+}
+rodar o seguinte comando
+meltano config tap-csv set files "$(cat /media/gnobisp/Novo\ volume/Gustavo/SistemadeDados/code-challenge/my-meltanoCSV-project/.meltano/extractors/tap-csv/venv/tap-csv-config.json | jq -c '.files')"
+
+
+
+
+
+
+
+
+
+sudo docker-compose up -d
+sudo usermod -aG docker $USER
+newgrp docker
+sudo systemctl start docker
+ls -l /var/run/docker.sock
+srw-rw---- 1 root docker 0 Jan 31 13:44 /var/run/docker.sock
+
+
+meltano config target-postgres set host "localhost"
+meltano config target-postgres set port "5432"
+meltano config target-postgres set user "meu_usuario"
+meltano config target-postgres set password "minha_senha"
+meltano config target-postgres set database "meu_banco"
