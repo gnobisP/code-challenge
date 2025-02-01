@@ -37,7 +37,7 @@ create-directory:
 	cookiecutter https://github.com/meltano/sdk --directory="cookiecutter/tap-template"
 
 create-project-github:
-	. /media/gnobisp/Novo\ volume/Gustavo/SistemadeDados/code-challenge/venv/bin/activate && \
+	. /home/gnobisp/Documents/code-challenge/venv/bin/activate && \
 	meltano init metano-project && \
 	cd metano-project && \
 	meltano add extractor tap-github && \
@@ -47,7 +47,7 @@ create-project-github:
 CONTAINER_NAME=code-challenge_db_1
 
 create-tap-postgres:
-	. /media/gnobisp/Novo\ volume/Gustavo/SistemadeDados/code-challenge/venv/bin/activate && \
+	. /home/gnobisp/Documents/code-challenge/venv/bin/activate && \
 	cd metano-project && \
 	meltano add extractor tap-postgres && \
 	meltano config tap-postgres set host $(CONTAINER_NAME) && \
@@ -57,22 +57,22 @@ create-tap-postgres:
 	meltano config tap-postgres set password thewindisblowing && \
 	meltano config tap-postgres set database northwind && \
 	meltano add loader target-jsonl && \
-	meltano config target-jsonl set destination_path /media/gnobisp/Novo\ volume/Gustavo/SistemadeDados/code-challenge/output/ && \
+	meltano config target-jsonl set destination_path /home/gnobisp/Documents/code-challenge/output/ && \
 	meltano elt tap-postgres target-jsonl
 
 create-tap-csv:
-	. /media/gnobisp/Novo\ volume/Gustavo/SistemadeDados/code-challenge/venv/bin/activate && \
+	. /home/gnobisp/Documents/code-challenge/venv/bin/activate && \
 	meltano init metano-project && \
 	cd metano-project && \
 	meltano add extractor tap-csv && \
-	meltano config tap-csv set files "$(cat /media/gnobisp/Novo\ volume/Gustavo/SistemadeDados/code-challenge/metano-project/.meltano/extractors/tap-csv/tap-csv-config.json | jq -c '.files')" && \
+	meltano config tap-csv set files "$(cat /home/gnobisp/Documents/code-challenge/metano-project/.meltano/extractors/tap-csv/tap-csv-config.json | jq -c '.files')" && \
 	meltano add loader target-jsonl && \
-	meltano config target-jsonl set destination_path /media/gnobisp/Novo\ volume/Gustavo/SistemadeDados/code-challenge/output/ && \
+	meltano config target-jsonl set destination_path /home/gnobisp/Documents/code-challenge/output/ && \
 	meltano elt tap-csv target-jsonl
 
 
 extrator-csv:
-	. /media/gnobisp/Novo\ volume/Gustavo/SistemadeDados/code-challenge/venv/bin/activate && \
+	. /home/gnobisp/Documents/code-challenge/venv/bin/activate && \
 	cd metano-project && \
 	meltano add extractor tap-csv && \
 	meltano init metano-project && \
@@ -80,7 +80,7 @@ extrator-csv:
 
 
 change-directory:
-	cd /media/gnobisp/Novo\ volume/Gustavo/SistemadeDados/code-challenge
+	cd /home/gnobisp/Documents/code-challenge
 
 discard-changes:
 	git checkout -- .
@@ -88,4 +88,11 @@ discard-changes:
 	git clean -fd
 
 csv-config:
-	meltano config tap-csv set files "$(cat /media/gnobisp/Novo\ volume/Gustavo/SistemadeDados/code-challenge/my-meltanoCSV-project/.meltano/extractors/tap-csv/venv/tap-csv-config.json | jq -c '.files')"
+	meltano config tap-csv set files "$(cat /home/gnobisp/Documents/code-challenge/my-meltanoCSV-project/.meltano/extractors/tap-csv/venv/tap-csv-config.json | jq -c '.files')"
+
+teste-conexao:
+	python3 -m venv venv && \
+	. /home/gnobisp/Documents/code-challenge/venv/bin/activate && \
+	pip install pandas && \
+	pip install psycopg2-binary && \
+	python3 testeConexao.py
