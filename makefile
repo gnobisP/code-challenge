@@ -50,7 +50,7 @@ create-tap-postgres:
 	. /home/gnobisp/Documents/code-challenge/venv/bin/activate && \
 	cd metano-project && \
 	meltano add extractor tap-postgres && \
-	meltano config tap-postgres set host $(CONTAINER_NAME) && \
+	meltano config tap-postgres set host localhost && \
 	meltano config tap-postgres set port 5432 && \
 	meltano config tap-postgres set dbname northwind && \
 	meltano config tap-postgres set user northwind_user && \
@@ -96,3 +96,8 @@ teste-conexao:
 	pip install pandas && \
 	pip install psycopg2-binary && \
 	python3 testeConexao.py
+
+reinicia-conexao:
+	docker-compose down && \
+	docker-compose up -d
+
