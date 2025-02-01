@@ -44,12 +44,13 @@ create-project-github:
 	meltano init my-meltano-project && \
 	cd my-meltano-project 
 
+CONTAINER_NAME=code-challenge_db_1
+
 create-tap-postgres:
 	. /media/gnobisp/Novo\ volume/Gustavo/SistemadeDados/code-challenge/venv/bin/activate && \
-	meltano init metano-project && \
 	cd metano-project && \
 	meltano add extractor tap-postgres && \
-	meltano config tap-postgres set host localhost && \
+	meltano config tap-postgres set host $(CONTAINER_NAME) && \
 	meltano config tap-postgres set port 5432 && \
 	meltano config tap-postgres set dbname northwind && \
 	meltano config tap-postgres set user northwind_user && \
