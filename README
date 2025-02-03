@@ -45,3 +45,26 @@ meltano config target-postgres set port "5432"
 meltano config target-postgres set user "meu_usuario"
 meltano config target-postgres set password "minha_senha"
 meltano config target-postgres set database "meu_banco"
+
+
+
+sudo apt-get update && sudo apt-get install python3-dev default-libmysqlclient-dev build-essential
+echo "pymysql" >> .meltano/loaders/target-mysql/requirements.txt
+
+
+pip install "apache-airflow[celery]==2.10.4" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.10.4/constraints-3.8.txt"
+pip install "apache-airflow==2.10.4" apache-airflow-providers-google==10.1.1
+
+AIRFLOW
+https://github.com/apache/airflow
+
+install, virtual enviroment
+export AIRFLOW_HOME=/home/gnobisp/Documents/challenge-secret/airflowTutorial
+airflow db init
+airflow users create --username admin --firstname firstname --lastname lastname --role Admin --email admin@domain.com
+airflow schedular
+airflow scheduler
+
+EXPLORAR DOCKER
+https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html
+https://airflow.apache.org/docs/apache-airflow/stable/tutorial/fundamentals.html
