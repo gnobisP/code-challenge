@@ -1,0 +1,22 @@
+[2025-02-03T21:29:46.125-0300] {processor.py:186} INFO - Started process (PID=301387) to work on /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_display_name.py
+[2025-02-03T21:29:46.128-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_display_name.py for tasks to queue
+[2025-02-03T21:29:46.138-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:29:46.136-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_display_name.py
+[2025-02-03T21:29:46.167-0300] {processor.py:925} INFO - DAG(s) 'example_display_name' retrieved from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_display_name.py
+[2025-02-03T21:29:47.212-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:29:47.209-0300] {override.py:1911} INFO - Created Permission View: can delete on DAG:example_display_name
+[2025-02-03T21:29:48.396-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:29:48.395-0300] {override.py:1911} INFO - Created Permission View: can read on DAG:example_display_name
+[2025-02-03T21:29:48.531-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:29:48.529-0300] {override.py:1911} INFO - Created Permission View: can edit on DAG:example_display_name
+[2025-02-03T21:29:49.146-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:29:49.145-0300] {override.py:1911} INFO - Created Permission View: can create on DAG Run:example_display_name
+[2025-02-03T21:29:49.434-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:29:49.432-0300] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:example_display_name
+[2025-02-03T21:29:49.650-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:29:49.649-0300] {override.py:1911} INFO - Created Permission View: can read on DAG Run:example_display_name
+[2025-02-03T21:29:49.849-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:29:49.847-0300] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:example_display_name
+[2025-02-03T21:29:49.851-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:29:49.850-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T21:29:49.912-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:29:49.911-0300] {dag.py:3262} INFO - Creating ORM DAG for example_display_name
+[2025-02-03T21:29:49.915-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:29:49.914-0300] {dag.py:4180} INFO - Setting next_dagrun for example_display_name to None, run_after=None
+[2025-02-03T21:29:50.173-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_display_name.py took 4.071 seconds
+[2025-02-03T22:19:24.535-0300] {processor.py:186} INFO - Started process (PID=44136) to work on /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_display_name.py
+[2025-02-03T22:19:24.544-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_display_name.py for tasks to queue
+[2025-02-03T22:19:24.555-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:19:24.554-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_display_name.py
+[2025-02-03T22:19:24.587-0300] {processor.py:925} INFO - DAG(s) 'example_display_name' retrieved from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_display_name.py
+[2025-02-03T22:19:24.675-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:19:24.674-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T22:19:24.753-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:19:24.752-0300] {dag.py:4180} INFO - Setting next_dagrun for example_display_name to None, run_after=None
+[2025-02-03T22:19:25.021-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_display_name.py took 0.511 seconds

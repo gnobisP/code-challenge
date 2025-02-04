@@ -30,6 +30,8 @@ VENV_PATH := $(PROJECT_DIR)/venv/bin/activate
 CSV_PATH := $(PROJECT_DIR)/data/order_details.csv
 # Define o diretório de saída (assumindo que ele está na pasta 'data' dentro do projeto)
 OUTPUT_DIR := $(PROJECT_DIR)/data
+# define airflow dir
+AIRFLOW_PATH := $(PROJECT_DIR)/airflow
 
 # Instala os pacotes no ambiente virtual
 install: venv
@@ -86,21 +88,26 @@ run: install setup create-tap-postgres run-etl
 airflow-install:
 	. $(VENV_PATH) && \
 	pip install "apache-airflow[celery]==2.10.4" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.10.4/constraints-3.12.txt" && \
-	export AIRFLOW_HOME=/home/gnobisp/Documents/challenge-secret/airflowTutorial && \
-	airflow db init 
+	export AIRFLOW_HOME=$(AIRFLOW_PATH) && \
+	airflow db init && \
+	mkdir -p ./dags ./logs ./plugins ./config
 
 airflow-config-user:
 	. $(VENV_PATH) && \
-	cd airflow && \
-	airflow users create --username admin --firstname admin --lastname admin --role Admin --email admin@admin.com && \
-	123456 && \
-	123456
+	cd $(AIRFLOW_PATH) && \
+	airflow users create --username admin --firstname admin --lastname admin --role Admin --email admin@admin.com --password 123456
 
-airflow-start:#abrir novo terminal
+airflow-start0:#abrir novo terminal
 	. $(VENV_PATH) && \
-	export AIRFLOW_HOME=/home/gnobisp/Documents/challenge-secret/airflowTutorial && \
-	airflow scheduler && \
-	airflow webserver -p 8081
+	export AIRFLOW_HOME=$(AIRFLOW_PATH) && \
+	airflow webserver -p 8088
+
+airflow-start1:
+	. $(VENV_PATH) && \
+	export AIRFLOW_HOME=$(AIRFLOW_PATH) && \
+	airflow scheduler
+	
+	
 	
 
 airflow: airflow-install airflow-config-user airflow-start

@@ -1,0 +1,78 @@
+[2025-02-03T21:14:42.904-0300] {processor.py:186} INFO - Started process (PID=275232) to work on /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T21:14:42.907-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py for tasks to queue
+[2025-02-03T21:14:42.913-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:14:42.912-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T21:14:42.967-0300] {processor.py:925} INFO - DAG(s) 'northwind_data_pipeline' retrieved from /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T21:14:43.631-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:14:43.627-0300] {override.py:1911} INFO - Created Permission View: can edit on DAG:northwind_data_pipeline
+[2025-02-03T21:14:43.801-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:14:43.800-0300] {override.py:1911} INFO - Created Permission View: can read on DAG:northwind_data_pipeline
+[2025-02-03T21:14:44.005-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:14:44.004-0300] {override.py:1911} INFO - Created Permission View: can delete on DAG:northwind_data_pipeline
+[2025-02-03T21:14:44.232-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:14:44.231-0300] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:northwind_data_pipeline
+[2025-02-03T21:14:44.388-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:14:44.387-0300] {override.py:1911} INFO - Created Permission View: can read on DAG Run:northwind_data_pipeline
+[2025-02-03T21:14:44.548-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:14:44.547-0300] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:northwind_data_pipeline
+[2025-02-03T21:14:45.650-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:14:45.649-0300] {override.py:1911} INFO - Created Permission View: can create on DAG Run:northwind_data_pipeline
+[2025-02-03T21:14:45.656-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:14:45.655-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T21:14:45.719-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:14:45.718-0300] {dag.py:3262} INFO - Creating ORM DAG for northwind_data_pipeline
+[2025-02-03T21:14:45.765-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:14:45.764-0300] {dag.py:4180} INFO - Setting next_dagrun for northwind_data_pipeline to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-02-03T21:14:45.987-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py took 3.107 seconds
+[2025-02-03T21:26:29.296-0300] {processor.py:186} INFO - Started process (PID=295918) to work on /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T21:26:29.307-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py for tasks to queue
+[2025-02-03T21:26:29.318-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:26:29.317-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T21:26:29.401-0300] {processor.py:925} INFO - DAG(s) 'northwind_data_pipeline' retrieved from /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T21:26:29.494-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:26:29.493-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T21:26:29.602-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:26:29.601-0300] {dag.py:4180} INFO - Setting next_dagrun for northwind_data_pipeline to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-02-03T21:26:30.039-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py took 0.769 seconds
+[2025-02-03T21:32:09.652-0300] {processor.py:186} INFO - Started process (PID=305652) to work on /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T21:32:09.665-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py for tasks to queue
+[2025-02-03T21:32:09.681-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:32:09.679-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T21:32:09.746-0300] {processor.py:925} INFO - DAG(s) 'northwind_data_pipeline' retrieved from /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T21:32:09.872-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:32:09.871-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T21:32:09.997-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:32:09.996-0300] {dag.py:4180} INFO - Setting next_dagrun for northwind_data_pipeline to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-02-03T21:32:10.232-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py took 0.652 seconds
+[2025-02-03T21:44:30.176-0300] {processor.py:186} INFO - Started process (PID=326562) to work on /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T21:44:30.248-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py for tasks to queue
+[2025-02-03T21:44:30.261-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:44:30.259-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T21:44:30.336-0300] {processor.py:925} INFO - DAG(s) 'northwind_data_pipeline' retrieved from /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T21:44:30.464-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:44:30.463-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T21:44:30.575-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:44:30.574-0300] {dag.py:4180} INFO - Setting next_dagrun for northwind_data_pipeline to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-02-03T21:44:30.883-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py took 0.787 seconds
+[2025-02-03T21:45:29.509-0300] {processor.py:186} INFO - Started process (PID=328470) to work on /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T21:45:29.518-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py for tasks to queue
+[2025-02-03T21:45:29.528-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:45:29.526-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T21:45:29.587-0300] {processor.py:925} INFO - DAG(s) 'northwind_data_pipeline' retrieved from /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T21:45:29.690-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:45:29.689-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T21:45:29.793-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:45:29.792-0300] {dag.py:4180} INFO - Setting next_dagrun for northwind_data_pipeline to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-02-03T21:45:30.028-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py took 0.552 seconds
+[2025-02-03T22:00:21.258-0300] {processor.py:186} INFO - Started process (PID=12236) to work on /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T22:00:21.286-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py for tasks to queue
+[2025-02-03T22:00:21.302-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:00:21.301-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T22:00:21.428-0300] {processor.py:925} INFO - DAG(s) 'northwind_data_pipeline' retrieved from /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T22:00:21.937-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:00:21.936-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T22:00:22.308-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:00:22.304-0300] {dag.py:4180} INFO - Setting next_dagrun for northwind_data_pipeline to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-02-03T22:00:22.679-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py took 1.454 seconds
+[2025-02-03T22:13:11.948-0300] {processor.py:186} INFO - Started process (PID=33838) to work on /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T22:13:12.364-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py for tasks to queue
+[2025-02-03T22:13:12.392-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:13:12.386-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T22:13:12.579-0300] {processor.py:925} INFO - DAG(s) 'northwind_data_pipeline' retrieved from /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T22:13:12.695-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:13:12.694-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T22:13:12.802-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:13:12.801-0300] {dag.py:4180} INFO - Setting next_dagrun for northwind_data_pipeline to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-02-03T22:13:13.375-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py took 1.546 seconds
+[2025-02-03T22:15:33.732-0300] {processor.py:186} INFO - Started process (PID=37781) to work on /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T22:15:33.784-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py for tasks to queue
+[2025-02-03T22:15:33.789-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:15:33.788-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T22:15:33.818-0300] {processor.py:925} INFO - DAG(s) 'northwind_data_pipeline' retrieved from /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T22:15:33.927-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:15:33.926-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T22:15:34.031-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:15:34.030-0300] {dag.py:4180} INFO - Setting next_dagrun for northwind_data_pipeline to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-02-03T22:15:34.178-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py took 0.477 seconds
+[2025-02-03T22:17:38.635-0300] {processor.py:186} INFO - Started process (PID=41656) to work on /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T22:17:38.800-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py for tasks to queue
+[2025-02-03T22:17:38.807-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:17:38.806-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T22:17:38.865-0300] {processor.py:925} INFO - DAG(s) 'northwind_data_pipeline' retrieved from /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T22:17:38.962-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:17:38.961-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T22:17:39.052-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:17:39.052-0300] {dag.py:4180} INFO - Setting next_dagrun for northwind_data_pipeline to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-02-03T22:17:39.909-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py took 1.304 seconds
+[2025-02-03T22:19:58.205-0300] {processor.py:186} INFO - Started process (PID=44975) to work on /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T22:19:58.214-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py for tasks to queue
+[2025-02-03T22:19:58.231-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:19:58.225-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T22:19:58.334-0300] {processor.py:925} INFO - DAG(s) 'northwind_data_pipeline' retrieved from /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py
+[2025-02-03T22:19:58.419-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:19:58.415-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T22:19:58.531-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:19:58.530-0300] {dag.py:4180} INFO - Setting next_dagrun for northwind_data_pipeline to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-02-03T22:19:59.582-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/airflow/dags/extrator.py took 1.410 seconds

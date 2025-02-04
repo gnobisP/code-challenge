@@ -1,0 +1,22 @@
+[2025-02-03T21:31:21.141-0300] {processor.py:186} INFO - Started process (PID=304130) to work on /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py
+[2025-02-03T21:31:21.144-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2025-02-03T21:31:21.153-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:31:21.152-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py
+[2025-02-03T21:31:21.260-0300] {processor.py:925} INFO - DAG(s) 'example_branch_operator' retrieved from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py
+[2025-02-03T21:31:23.938-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:31:23.935-0300] {override.py:1911} INFO - Created Permission View: can delete on DAG:example_branch_operator
+[2025-02-03T21:31:24.106-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:31:24.105-0300] {override.py:1911} INFO - Created Permission View: can read on DAG:example_branch_operator
+[2025-02-03T21:31:24.310-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:31:24.308-0300] {override.py:1911} INFO - Created Permission View: can edit on DAG:example_branch_operator
+[2025-02-03T21:31:24.718-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:31:24.717-0300] {override.py:1911} INFO - Created Permission View: can create on DAG Run:example_branch_operator
+[2025-02-03T21:31:24.987-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:31:24.986-0300] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:example_branch_operator
+[2025-02-03T21:31:25.235-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:31:25.233-0300] {override.py:1911} INFO - Created Permission View: can read on DAG Run:example_branch_operator
+[2025-02-03T21:31:25.487-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:31:25.485-0300] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:example_branch_operator
+[2025-02-03T21:31:25.489-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:31:25.488-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T21:31:25.578-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:31:25.577-0300] {dag.py:3262} INFO - Creating ORM DAG for example_branch_operator
+[2025-02-03T21:31:25.644-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:31:25.643-0300] {dag.py:4180} INFO - Setting next_dagrun for example_branch_operator to 2025-02-03 00:00:00+00:00, run_after=2025-02-04 00:00:00+00:00
+[2025-02-03T21:31:26.410-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py took 5.298 seconds
+[2025-02-03T22:19:40.925-0300] {processor.py:186} INFO - Started process (PID=44622) to work on /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py
+[2025-02-03T22:19:40.965-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2025-02-03T22:19:40.974-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:19:40.973-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py
+[2025-02-03T22:19:41.103-0300] {processor.py:925} INFO - DAG(s) 'example_branch_operator' retrieved from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py
+[2025-02-03T22:19:41.723-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:19:41.722-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T22:19:41.836-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:19:41.835-0300] {dag.py:4180} INFO - Setting next_dagrun for example_branch_operator to 2025-02-03 00:00:00+00:00, run_after=2025-02-04 00:00:00+00:00
+[2025-02-03T22:19:42.665-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py took 1.789 seconds

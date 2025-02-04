@@ -1,0 +1,22 @@
+[2025-02-03T21:32:02.362-0300] {processor.py:186} INFO - Started process (PID=305449) to work on /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_bash_decorator.py
+[2025-02-03T21:32:02.365-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_bash_decorator.py for tasks to queue
+[2025-02-03T21:32:02.376-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:32:02.375-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_bash_decorator.py
+[2025-02-03T21:32:02.548-0300] {processor.py:925} INFO - DAG(s) 'example_bash_decorator' retrieved from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_bash_decorator.py
+[2025-02-03T21:32:03.680-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:32:03.677-0300] {override.py:1911} INFO - Created Permission View: can delete on DAG:example_bash_decorator
+[2025-02-03T21:32:04.989-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:32:04.987-0300] {override.py:1911} INFO - Created Permission View: can read on DAG:example_bash_decorator
+[2025-02-03T21:32:05.346-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:32:05.345-0300] {override.py:1911} INFO - Created Permission View: can edit on DAG:example_bash_decorator
+[2025-02-03T21:32:05.797-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:32:05.795-0300] {override.py:1911} INFO - Created Permission View: can create on DAG Run:example_bash_decorator
+[2025-02-03T21:32:06.052-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:32:06.050-0300] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:example_bash_decorator
+[2025-02-03T21:32:06.390-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:32:06.388-0300] {override.py:1911} INFO - Created Permission View: can read on DAG Run:example_bash_decorator
+[2025-02-03T21:32:07.534-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:32:07.532-0300] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:example_bash_decorator
+[2025-02-03T21:32:07.536-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:32:07.535-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T21:32:07.625-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:32:07.624-0300] {dag.py:3262} INFO - Creating ORM DAG for example_bash_decorator
+[2025-02-03T21:32:07.628-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:32:07.627-0300] {dag.py:4180} INFO - Setting next_dagrun for example_bash_decorator to None, run_after=None
+[2025-02-03T21:32:07.964-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_bash_decorator.py took 5.644 seconds
+[2025-02-03T22:19:53.954-0300] {processor.py:186} INFO - Started process (PID=44877) to work on /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_bash_decorator.py
+[2025-02-03T22:19:53.970-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_bash_decorator.py for tasks to queue
+[2025-02-03T22:19:53.986-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:19:53.981-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_bash_decorator.py
+[2025-02-03T22:19:54.070-0300] {processor.py:925} INFO - DAG(s) 'example_bash_decorator' retrieved from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_bash_decorator.py
+[2025-02-03T22:19:54.657-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:19:54.656-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T22:19:54.722-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:19:54.721-0300] {dag.py:4180} INFO - Setting next_dagrun for example_bash_decorator to None, run_after=None
+[2025-02-03T22:19:55.171-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_bash_decorator.py took 1.241 seconds

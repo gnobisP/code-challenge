@@ -1,0 +1,29 @@
+[2025-02-03T21:28:30.475-0300] {processor.py:186} INFO - Started process (PID=299119) to work on /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2025-02-03T21:28:30.478-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py for tasks to queue
+[2025-02-03T21:28:30.486-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:28:30.484-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2025-02-03T21:28:30.535-0300] {processor.py:925} INFO - DAG(s) 'example_params_trigger_ui' retrieved from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2025-02-03T21:28:33.091-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:28:33.089-0300] {override.py:1911} INFO - Created Permission View: can delete on DAG:example_params_trigger_ui
+[2025-02-03T21:28:33.238-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:28:33.236-0300] {override.py:1911} INFO - Created Permission View: can read on DAG:example_params_trigger_ui
+[2025-02-03T21:28:33.379-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:28:33.378-0300] {override.py:1911} INFO - Created Permission View: can edit on DAG:example_params_trigger_ui
+[2025-02-03T21:28:34.058-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:28:34.057-0300] {override.py:1911} INFO - Created Permission View: can create on DAG Run:example_params_trigger_ui
+[2025-02-03T21:28:34.249-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:28:34.247-0300] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:example_params_trigger_ui
+[2025-02-03T21:28:34.463-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:28:34.462-0300] {override.py:1911} INFO - Created Permission View: can read on DAG Run:example_params_trigger_ui
+[2025-02-03T21:28:34.656-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:28:34.654-0300] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:example_params_trigger_ui
+[2025-02-03T21:28:34.658-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:28:34.657-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T21:28:34.724-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:28:34.723-0300] {dag.py:3262} INFO - Creating ORM DAG for example_params_trigger_ui
+[2025-02-03T21:28:34.727-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:28:34.726-0300] {dag.py:4180} INFO - Setting next_dagrun for example_params_trigger_ui to None, run_after=None
+[2025-02-03T21:28:34.991-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py took 4.554 seconds
+[2025-02-03T22:19:04.534-0300] {processor.py:186} INFO - Started process (PID=43770) to work on /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2025-02-03T22:19:05.229-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py for tasks to queue
+[2025-02-03T22:19:05.242-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:19:05.238-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2025-02-03T22:19:05.299-0300] {processor.py:925} INFO - DAG(s) 'example_params_trigger_ui' retrieved from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2025-02-03T22:19:05.556-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:19:05.555-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T22:19:05.625-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:19:05.624-0300] {dag.py:4180} INFO - Setting next_dagrun for example_params_trigger_ui to None, run_after=None
+[2025-02-03T22:19:05.872-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py took 1.363 seconds
+[2025-02-03T22:21:21.445-0300] {processor.py:186} INFO - Started process (PID=46879) to work on /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2025-02-03T22:21:21.711-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py for tasks to queue
+[2025-02-03T22:21:21.726-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:21:21.724-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2025-02-03T22:21:21.793-0300] {processor.py:925} INFO - DAG(s) 'example_params_trigger_ui' retrieved from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2025-02-03T22:21:22.045-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:21:22.043-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T22:21:22.123-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:21:22.119-0300] {dag.py:4180} INFO - Setting next_dagrun for example_params_trigger_ui to None, run_after=None
+[2025-02-03T22:21:23.504-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py took 2.108 seconds

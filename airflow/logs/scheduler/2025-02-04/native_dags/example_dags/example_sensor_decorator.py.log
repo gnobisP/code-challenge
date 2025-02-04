@@ -1,0 +1,29 @@
+[2025-02-03T21:28:01.315-0300] {processor.py:186} INFO - Started process (PID=298296) to work on /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py
+[2025-02-03T21:28:01.318-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py for tasks to queue
+[2025-02-03T21:28:01.326-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:28:01.325-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py
+[2025-02-03T21:28:01.361-0300] {processor.py:925} INFO - DAG(s) 'example_sensor_decorator' retrieved from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py
+[2025-02-03T21:28:02.301-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:28:02.298-0300] {override.py:1911} INFO - Created Permission View: can delete on DAG:example_sensor_decorator
+[2025-02-03T21:28:02.547-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:28:02.545-0300] {override.py:1911} INFO - Created Permission View: can read on DAG:example_sensor_decorator
+[2025-02-03T21:28:02.866-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:28:02.865-0300] {override.py:1911} INFO - Created Permission View: can edit on DAG:example_sensor_decorator
+[2025-02-03T21:28:03.247-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:28:03.246-0300] {override.py:1911} INFO - Created Permission View: can create on DAG Run:example_sensor_decorator
+[2025-02-03T21:28:03.565-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:28:03.564-0300] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:example_sensor_decorator
+[2025-02-03T21:28:04.669-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:28:04.666-0300] {override.py:1911} INFO - Created Permission View: can read on DAG Run:example_sensor_decorator
+[2025-02-03T21:28:04.861-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:28:04.859-0300] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:example_sensor_decorator
+[2025-02-03T21:28:04.862-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:28:04.862-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T21:28:04.924-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:28:04.923-0300] {dag.py:3262} INFO - Creating ORM DAG for example_sensor_decorator
+[2025-02-03T21:28:04.927-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:28:04.926-0300] {dag.py:4180} INFO - Setting next_dagrun for example_sensor_decorator to None, run_after=None
+[2025-02-03T21:28:05.215-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py took 3.933 seconds
+[2025-02-03T22:18:51.448-0300] {processor.py:186} INFO - Started process (PID=43389) to work on /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py
+[2025-02-03T22:18:52.079-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py for tasks to queue
+[2025-02-03T22:18:52.090-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:18:52.088-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py
+[2025-02-03T22:18:52.128-0300] {processor.py:925} INFO - DAG(s) 'example_sensor_decorator' retrieved from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py
+[2025-02-03T22:18:52.220-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:18:52.218-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T22:18:52.282-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:18:52.281-0300] {dag.py:4180} INFO - Setting next_dagrun for example_sensor_decorator to None, run_after=None
+[2025-02-03T22:18:52.526-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py took 1.106 seconds
+[2025-02-03T22:21:09.907-0300] {processor.py:186} INFO - Started process (PID=46655) to work on /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py
+[2025-02-03T22:21:10.485-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py for tasks to queue
+[2025-02-03T22:21:10.503-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:21:10.498-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py
+[2025-02-03T22:21:10.573-0300] {processor.py:925} INFO - DAG(s) 'example_sensor_decorator' retrieved from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py
+[2025-02-03T22:21:10.636-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:21:10.635-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T22:21:10.738-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:21:10.737-0300] {dag.py:4180} INFO - Setting next_dagrun for example_sensor_decorator to None, run_after=None
+[2025-02-03T22:21:11.062-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py took 1.183 seconds

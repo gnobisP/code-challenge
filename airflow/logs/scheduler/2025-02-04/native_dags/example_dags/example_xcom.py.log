@@ -1,0 +1,64 @@
+[2025-02-03T21:15:36.873-0300] {processor.py:186} INFO - Started process (PID=277265) to work on /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-02-03T21:15:36.877-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-02-03T21:15:36.895-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:15:36.893-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-02-03T21:15:36.957-0300] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-02-03T21:15:38.455-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:15:38.453-0300] {override.py:1911} INFO - Created Permission View: can edit on DAG:example_xcom
+[2025-02-03T21:15:39.362-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:15:39.360-0300] {override.py:1911} INFO - Created Permission View: can read on DAG:example_xcom
+[2025-02-03T21:15:43.043-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:15:43.042-0300] {override.py:1911} INFO - Created Permission View: can delete on DAG:example_xcom
+[2025-02-03T21:15:44.155-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:15:44.153-0300] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:example_xcom
+[2025-02-03T21:15:44.343-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:15:44.342-0300] {override.py:1911} INFO - Created Permission View: can read on DAG Run:example_xcom
+[2025-02-03T21:15:46.662-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:15:46.660-0300] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:example_xcom
+[2025-02-03T21:15:49.956-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:15:49.952-0300] {override.py:1911} INFO - Created Permission View: can create on DAG Run:example_xcom
+[2025-02-03T21:15:49.960-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:15:49.959-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T21:15:51.963-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:15:51.958-0300] {dag.py:3262} INFO - Creating ORM DAG for example_xcom
+[2025-02-03T21:15:52.024-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:15:52.023-0300] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-02-03T21:15:52.621-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 15.825 seconds
+[2025-02-03T21:26:59.621-0300] {processor.py:186} INFO - Started process (PID=296922) to work on /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-02-03T21:26:59.830-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-02-03T21:26:59.848-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:26:59.844-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-02-03T21:26:59.908-0300] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-02-03T21:27:00.776-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:27:00.775-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T21:27:00.915-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:27:00.914-0300] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-02-03T21:27:02.010-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 2.449 seconds
+[2025-02-03T21:44:55.798-0300] {processor.py:186} INFO - Started process (PID=327375) to work on /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-02-03T21:44:55.805-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-02-03T21:44:55.818-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:44:55.817-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-02-03T21:44:55.906-0300] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-02-03T21:44:56.074-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:44:56.073-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T21:44:56.222-0300] {logging_mixin.py:190} INFO - [2025-02-03T21:44:56.221-0300] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-02-03T21:44:56.577-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.805 seconds
+[2025-02-03T22:00:48.095-0300] {processor.py:186} INFO - Started process (PID=12884) to work on /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-02-03T22:00:48.105-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-02-03T22:00:48.119-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:00:48.117-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-02-03T22:00:48.168-0300] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-02-03T22:00:48.266-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:00:48.265-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T22:00:48.359-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:00:48.358-0300] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-02-03T22:00:49.424-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 1.355 seconds
+[2025-02-03T22:13:40.418-0300] {processor.py:186} INFO - Started process (PID=34621) to work on /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-02-03T22:13:40.450-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-02-03T22:13:40.461-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:13:40.459-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-02-03T22:13:40.578-0300] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-02-03T22:13:40.790-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:13:40.789-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T22:13:40.933-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:13:40.932-0300] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-02-03T22:13:43.132-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 2.752 seconds
+[2025-02-03T22:16:00.706-0300] {processor.py:186} INFO - Started process (PID=38698) to work on /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-02-03T22:16:01.528-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-02-03T22:16:01.537-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:16:01.535-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-02-03T22:16:01.629-0300] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-02-03T22:16:01.751-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:16:01.750-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T22:16:01.853-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:16:01.852-0300] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-02-03T22:16:03.488-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 2.814 seconds
+[2025-02-03T22:18:06.329-0300] {processor.py:186} INFO - Started process (PID=42224) to work on /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-02-03T22:18:06.343-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-02-03T22:18:06.350-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:18:06.349-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-02-03T22:18:06.437-0300] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-02-03T22:18:06.559-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:18:06.558-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T22:18:06.649-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:18:06.648-0300] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-02-03T22:18:06.907-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.603 seconds
+[2025-02-03T22:20:31.959-0300] {processor.py:186} INFO - Started process (PID=45593) to work on /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-02-03T22:20:32.114-0300] {processor.py:914} INFO - Processing file /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-02-03T22:20:32.124-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:20:32.122-0300] {dagbag.py:588} INFO - Filling up the DagBag from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-02-03T22:20:32.170-0300] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-02-03T22:20:32.245-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:20:32.244-0300] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-03T22:20:32.333-0300] {logging_mixin.py:190} INFO - [2025-02-03T22:20:32.332-0300] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-02-03T22:20:33.277-0300] {processor.py:208} INFO - Processing /home/gnobisp/Documents/floder1/code-challenge/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 1.352 seconds
