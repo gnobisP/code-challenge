@@ -1,9 +1,12 @@
 .PHONY: venv install deactivate clean
 
 # Cria o ambiente virtual
-venv:
-	python3.10 -m venv venv
+venv-airflow:
+	python3.10 -m venv venv_airflow
  
+venv-meltano:
+	python3.10 -m venv venv_meltano
+
 discard-changes:
 	git checkout -- .
 	git reset --hard HEAD
@@ -21,11 +24,15 @@ reinicia-conexao:
 	docker-compose up -d
 
 # Comando para ativar o ambiente virtual e executar comandos no projeto Meltano
-ACTIVATE_VENV = . $(VENV_PATH) && cd $(PROJECT_DIR) &&
+ACTIVATE_VENV_MELTANO := . $(VENV_PATH_MELTANO) && cd $(PROJECT_DIR) &&
+# Comando para ativar o ambiente virtual e executar comandos no projeto Meltano
+ACTIVATE_VENV_AIRFLOW := . $(VENV_PATH_AIRFLOW) && cd $(PROJECT_DIR) &&
 # Define o diretório do projeto como o diretório atual
 PROJECT_DIR := $(shell pwd)
 # Define o caminho para o ambiente virtual (assumindo que ele está na pasta 'venv' dentro do projeto)
-VENV_PATH := $(PROJECT_DIR)/venv/bin/activate
+VENV_PATH_AIRFLOW := $(PROJECT_DIR)/venv_airflow/bin/activate
+# Define o caminho para o ambiente virtual (assumindo que ele está na pasta 'venv' dentro do projeto)
+VENV_PATH_MELTANO := $(PROJECT_DIR)/venv_meltano/bin/activate
 # Define o caminho para o arquivo CSV (assumindo que ele está na pasta 'data' dentro do projeto)
 CSV_PATH := $(PROJECT_DIR)/data/order_details.csv
 # Define o diretório de saída (assumindo que ele está na pasta 'data' dentro do projeto)
@@ -34,13 +41,13 @@ OUTPUT_DIR := $(PROJECT_DIR)/data
 AIRFLOW_PATH := $(PROJECT_DIR)/airflow
 
 # Instala os pacotes no ambiente virtual
-install: venv
-	venv/bin/pip install --upgrade pip
-	venv/bin/pip install meltano
+install: venv-meltano
+	venv_meltano/bin/pip3 install --upgrade pip
+	venv_meltano/bin/pip3 install meltano
 
 # Configuração inicial do projeto Meltano (substitua target-jsonl por target-parquet)
 setup:
-	. $(VENV_PATH) && \
+	. $(VENV_PATH_MELTANO) && \
 	meltano init metano-project && \
 	cd metano-project && \
 	meltano add extractor tap-parquet && \
@@ -51,7 +58,7 @@ setup:
 
 # Configuração do tap-postgres (mantido igual)
 create-tap-postgres:
-	$(ACTIVATE_VENV) \
+	$(ACTIVATE_VENV_MELTANO) \
 	cd metano-project && \
 	meltano add extractor tap-postgres --variant meltanolabs && \
 	meltano config tap-postgres set host localhost && \
@@ -69,7 +76,7 @@ create-tap-postgres:
 
 # Executar o pipeline de ETL para salvar em Parquet
 run-etl:
-	$(ACTIVATE_VENV) \
+	$(ACTIVATE_VENV_MELTANO) \
 	cd metano-project && \
 	meltano elt tap-csv target-parquet && \
 	meltano elt tap-postgres target-parquet
@@ -81,35 +88,36 @@ run-nuvem:
 clean:
 	rm -rf venv
 	rm -rf metano-project
+	
 
 # Tarefa padrão: instala, configura e executa o pipeline
-run: install setup create-tap-postgres run-etl
+run: install setup create-tap-postgres run-etl 
 
-airflow-install:
-	. $(VENV_PATH) && \
+install_metano: install setup create-tap-postgres
+
+install_airflow: airflow-install airflow-config-user airflow-start
+
+ 
+airflow-install: 
 	pip install "apache-airflow[celery]==2.10.4" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.10.4/constraints-3.12.txt" && \
 	export AIRFLOW_HOME=$(AIRFLOW_PATH) && \
-	airflow db init && \
-	mkdir -p ./dags ./logs ./plugins ./config
+	mkdir -p ./dags ./logs ./plugins ./config && /
+	airflow db migrate
 
 airflow-config-user:
-	. $(VENV_PATH) && \
+	export AIRFLOW_HOME=$(AIRFLOW_PATH) && \
+	airflow db migrate && \
 	cd $(AIRFLOW_PATH) && \
 	airflow users create --username admin --firstname admin --lastname admin --role Admin --email admin@admin.com --password 123456
-
+#export AIRFLOW_HOME=/home/gnobisp/Documents/folder1/code-challenge/airflow
 airflow-start0:#abrir novo terminal
-	. $(VENV_PATH) && \
 	export AIRFLOW_HOME=$(AIRFLOW_PATH) && \
-	airflow webserver -p 8088
+	airflow webserver -p 8089
 
 airflow-start1:
-	. $(VENV_PATH) && \
 	export AIRFLOW_HOME=$(AIRFLOW_PATH) && \
 	airflow scheduler
 	
-	
-	
-
 airflow: airflow-install airflow-config-user airflow-start
 
 #fazer alterações do video 13:57
@@ -122,3 +130,6 @@ airflow-docker:
 	docker-compose up airflow-init  && /
 	docker-compose up -d
 	
+airflow-process:
+	lsof -i :8793 && \
+	kill -9 PID 
