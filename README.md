@@ -17,8 +17,9 @@ A solução deve seguir o padrão do desenho demonstado abaixo:
 
 # 🛠 Tecnologias Utilizadas 
 - **Sistema Operacional**: [Linux-Ubuntu] 
+- **Python**: [python3 3.10] 
 - **Scheduler:**: [Airflow - 2.10.4] 
-- **Data Loader**: [Python - 3.10.16]
+- **Data Loader**: [Meltano- 3.10.16]
 - **Database**: POSTGRESQL
 - **IDE**: [VSCode]
 
