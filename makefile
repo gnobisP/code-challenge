@@ -137,20 +137,3 @@ airflow-docker:
 airflow-process:
 	lsof -i :8793 && \
 	kill -9 PID 
-
-parquet-config:
-	echo '[ \
-		{"entity": "order_details", "path": "$(DATA_PATH)/csv/$(DATE)/order_details/order_details-*.parquet", "keys": ["order_id"]}, \
-		{"entity": "public_categories", "path": "$(DATA_PATH)/postgres/$(DATE)/public-categories/public-categories-*.parquet", "keys": ["category_id"]}, \
-		{"entity": "public-customers", "path": "$(DATA_PATH)/postgres/$(DATE)/public-customers/public-customers-*.parquet", "keys": ["customer_id"]}, \
-		{"entity": "public-employee_territories", "path": "$(DATA_PATH)/postgres/$(DATE)/public-employee_territories/public-employee_territories-*.parquet", "keys": ["employee_id", "territory_id"]}, \
-		{"entity": "public-orders", "path": "$(DATA_PATH)/postgres/$(DATE)/public-orders/public-orders-*.parquet", "keys": ["order_id"]}, \
-		{"entity": "public-products", "path": "$(DATA_PATH)/postgres/$(DATE)/public-products/public-products-*.parquet", "keys": ["product_id"]}, \
-		{"entity": "public-region", "path": "$(DATA_PATH)/postgres/$(DATE)/public-region/public-region-*.parquet", "keys": ["region_id"]}, \
-		{"entity": "public-shippers", "path": "$(DATA_PATH)/postgres/$(DATE)/public-shippers/public-shippers-*.parquet", "keys": ["shipper_id"]}, \
-		{"entity": "public-suppliers", "path": "$(DATA_PATH)/postgres/$(DATE)/public-suppliers/public-suppliers-*.parquet", "keys": ["supplier_id"]}, \
-		{"entity": "public-territories", "path": "$(DATA_PATH)/postgres/$(DATE)/public-territories/public-territories-*.parquet", "keys": ["territory_id"]}, \
-		{"entity": "public-us_states", "path": "$(DATA_PATH)/postgres/$(DATE)/public-us_states/public-us_states-*.parquet", "keys": ["state_id"]} \
-	]' > /tmp/parquet_config.json && \
-	meltano config tap-parquet set files "$$(cat /tmp/parquet_config.json)"
-
