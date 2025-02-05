@@ -63,11 +63,11 @@ Contém os arquivos responsáveis pela arquitetura do pipeline
 - **`order_details.csv`**: Planilha que contém as ordens.
 - **`northwind.sql`**: Comandos SQL para alterar dados da BD da northwind.
 
-'''sh
+```sh
 /data/postgres/{table}/2024-01-01/file.format
 /data/postgres/{table}/2024-01-02/file.format
 /data/csv/2024-01-02/file.format
-'''
+```
 
 #### 📂 `csv`
 - Local onde estará contido os resultado final do extratorCSV da etapa1, subdividida por data.
