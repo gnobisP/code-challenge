@@ -45,7 +45,7 @@ install: venv-meltano
 	venv_meltano/bin/pip3 install --upgrade pip
 	venv_meltano/bin/pip3 install meltano
 
-# Configuração inicial do projeto Meltano (substitua target-jsonl por target-parquet)
+# Configuração inicial do projeto Meltano
 setup:
 	. $(VENV_PATH_MELTANO) && \
 	meltano init metano-project && \
@@ -54,7 +54,11 @@ setup:
 	meltano add extractor tap-csv --variant meltanolabs && \
 	meltano config tap-csv set files '[{"entity": "order_details", "path": "$(CSV_PATH)", "keys": ["order_id"], "format": "csv"}]' && \
 	meltano add loader target-parquet && \
-	meltano config target-parquet set destination_path $(OUTPUT_DIR) 
+	meltano add loader target-jsonl && \
+	meltano config target-parquet set destination_path $(OUTPUT_DIR)  && \
+	meltano config target-jsonl set destination_path $(OUTPUT_DIR) && \
+	meltano config target-csv set destination_path $(OUTPUT_DIR)  
+	
 
 # Configuração do tap-postgres (mantido igual)
 create-tap-postgres:
@@ -133,3 +137,20 @@ airflow-docker:
 airflow-process:
 	lsof -i :8793 && \
 	kill -9 PID 
+
+parquet-config:
+	echo '[ \
+		{"entity": "order_details", "path": "$(DATA_PATH)/csv/$(DATE)/order_details/order_details-*.parquet", "keys": ["order_id"]}, \
+		{"entity": "public_categories", "path": "$(DATA_PATH)/postgres/$(DATE)/public-categories/public-categories-*.parquet", "keys": ["category_id"]}, \
+		{"entity": "public-customers", "path": "$(DATA_PATH)/postgres/$(DATE)/public-customers/public-customers-*.parquet", "keys": ["customer_id"]}, \
+		{"entity": "public-employee_territories", "path": "$(DATA_PATH)/postgres/$(DATE)/public-employee_territories/public-employee_territories-*.parquet", "keys": ["employee_id", "territory_id"]}, \
+		{"entity": "public-orders", "path": "$(DATA_PATH)/postgres/$(DATE)/public-orders/public-orders-*.parquet", "keys": ["order_id"]}, \
+		{"entity": "public-products", "path": "$(DATA_PATH)/postgres/$(DATE)/public-products/public-products-*.parquet", "keys": ["product_id"]}, \
+		{"entity": "public-region", "path": "$(DATA_PATH)/postgres/$(DATE)/public-region/public-region-*.parquet", "keys": ["region_id"]}, \
+		{"entity": "public-shippers", "path": "$(DATA_PATH)/postgres/$(DATE)/public-shippers/public-shippers-*.parquet", "keys": ["shipper_id"]}, \
+		{"entity": "public-suppliers", "path": "$(DATA_PATH)/postgres/$(DATE)/public-suppliers/public-suppliers-*.parquet", "keys": ["supplier_id"]}, \
+		{"entity": "public-territories", "path": "$(DATA_PATH)/postgres/$(DATE)/public-territories/public-territories-*.parquet", "keys": ["territory_id"]}, \
+		{"entity": "public-us_states", "path": "$(DATA_PATH)/postgres/$(DATE)/public-us_states/public-us_states-*.parquet", "keys": ["state_id"]} \
+	]' > /tmp/parquet_config.json && \
+	meltano config tap-parquet set files "$$(cat /tmp/parquet_config.json)"
+

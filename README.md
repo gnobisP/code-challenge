@@ -11,7 +11,8 @@ Você receberá duas fontes de dados:
 **Esquema do Banco Northwind Original**:  
 ![image](https://user-images.githubusercontent.com/49417424/105997621-9666b980-608a-11eb-86fd-db6b44ece02a.png)
 
-The solution should be based on the diagrams below:
+
+A solução deve seguir o padrão do desenho demonstado abaixo:
 ![image](docs/diagrama_embulk_meltano.jpg)
 
 # 🛠 Tecnologias Utilizadas 
