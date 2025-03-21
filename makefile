@@ -118,7 +118,7 @@ create-load-csv:
 	
 # Executar o pipeline de ETL para salvar em Parquet
 run-etl:
-	. $(VENV_PATH_MELTANO) \
+	. $(VENV_PATH_MELTANO) && \
 	cd metano-project && \
 	meltano elt tap-csv target-csv-csv && \
 	meltano elt tap-postgres target-postgres-csv
@@ -138,7 +138,6 @@ install_meltano: venv-meltano
 	venv_meltano/bin/pip3 install --upgrade pip
 	venv_meltano/bin/pip3 install meltano
 	. $(VENV_PATH_MELTANO) && \
-	meltano init metano-project
 	cd metano-project
 
 configura_meltano: create-tap-parquet create-tap-csv create-tap-postgres create-load-parquet create-load-jsonl
