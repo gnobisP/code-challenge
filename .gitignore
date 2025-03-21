@@ -1,0 +1,6 @@
+dbdata/
+venv/
+venv_meltano/
+venv_airflow/
+customers.csv
+

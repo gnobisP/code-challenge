@@ -1,0 +1,96 @@
+version: 1
+default_environment: dev
+project_id: bfc63832-f6ab-4533-a16d-614564ce3260
+environments:
+- name: dev
+- name: staging
+- name: prod
+plugins:
+  extractors:
+  - name: tap-parquet
+    variant: ae-nv
+    pip_url: git+https://github.com/AE-nv/tap-parquet.git
+  - name: tap-csv
+    variant: meltanolabs
+    pip_url: git+https://github.com/MeltanoLabs/tap-csv.git
+    config:
+      files:
+      - entity: order_details
+        path: ../data
+        keys:
+        - order_id
+        format: csv
+  - name: tap-postgres
+    variant: meltanolabs
+    pip_url: meltanolabs-tap-postgres
+    config:
+      host: localhost
+      port: 5432
+      dbname: northwind
+      user: northwind_user
+      database: northwind
+      default_replication_method: FULL_TABLE
+      filter_schemas:
+      - public
+      max_record_count: 10000
+      dates_as_string: false
+      json_as_object: false
+      ssl_enable: false
+      files:
+      - entity: postgres
+
+  loaders:
+  - name: target-parquet
+    variant: automattic
+    pip_url: git+https://github.com/Automattic/target-parquet.git
+    config:
+      destination_path: ../data/$DATE
+  - name: target-jsonl
+    variant: andyh1203
+    pip_url: target-jsonl
+    config:
+      destination_path: ../data/csv/$DATE
+  - name: target-jsonl-csv
+    inherit_from: target-jsonl
+    config:
+      destination_path: ../data/csv/$DATE
+  - name: target-csv
+    variant: meltanolabs
+    pip_url: git+https://github.com/MeltanoLabs/target-csv.git
+
+  - name: target-csv-csv
+    inherit_from: target-csv
+    config:
+      output_path: ../data/csv
+      file_naming_scheme: '{datestamp}/file.csv'  # Esquema dinâmico aqui
+
+  - name: target-postgres-csv
+    inherit_from: target-csv
+    config:
+      output_path: ../data/postgres  # Diretório base (sem variáveis)
+      file_naming_scheme: '{stream_name}/{datestamp}/file.csv'  # Esquema dinâmico aqui
+      datestamp_format: '%Y-%m-%d'
+
+  - name: target-parquet-postgres
+    inherit_from: target-parquet
+    config:
+      destination_path: ../data/postgres/
+
+##
+#/data/postgres/{table}/2024-01-01/file.format
+#/data/postgres/{table}/2024-01-02/file.format
+#/data/csv/2024-01-02/file.format
+
+
+
+
+
+
+
+
+
+
+
+
+
+

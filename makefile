@@ -14,7 +14,7 @@ discard-changes:
 
 teste-conexao:
 	python3 -m venv venv && \
-	. /home/gnobisp/Documents/challenge-secret/venv/bin/activate && \
+	$(ACTIVATE_VENV_TESTE_CONEXAO) \
 	pip install pandas && \
 	pip install psycopg2-binary && \
 	python3 testeConexao.py
@@ -27,12 +27,16 @@ reinicia-conexao:
 ACTIVATE_VENV_MELTANO := . $(VENV_PATH_MELTANO)
 # Comando para ativar o ambiente virtual e executar comandos no projeto Meltano
 ACTIVATE_VENV_AIRFLOW := . $(VENV_PATH_AIRFLOW) && cd $(PROJECT_DIR) &&
+# Comando para ativar o ambiente virtual e executar comandos no projeto Meltano
+ACTIVATE_VENV_TESTE_CONEXAO := . $(VENV_PATH_TESTE) 
 # Define o diretório do projeto como o diretório atual
 PROJECT_DIR := $(shell pwd)
 # Define o caminho para o ambiente virtual (assumindo que ele está na pasta 'venv' dentro do projeto)
 VENV_PATH_AIRFLOW := $(PROJECT_DIR)/venv_airflow/bin/activate
 # Define o caminho para o ambiente virtual (assumindo que ele está na pasta 'venv' dentro do projeto)
 VENV_PATH_MELTANO := $(PROJECT_DIR)/venv_meltano/bin/activate
+# Define o caminho para o ambiente virtual (assumindo que ele está na pasta 'venv' dentro do projeto)
+VENV_PATH_TESTE := $(PROJECT_DIR)/venv/bin/activate
 # Define o caminho para o arquivo CSV (assumindo que ele está na pasta 'data' dentro do projeto)
 CSV_PATH := $(PROJECT_DIR)/data/order_details.csv
 # Define o diretório de saída (assumindo que ele está na pasta 'data' dentro do projeto)
@@ -104,13 +108,22 @@ create-load-jsonl:
 	meltano add loader target-jsonl && \
 	meltano config target-jsonl set destination_path $(OUTPUT_DIR)
 
+# Configuração do tap-postgres (mantido igual)
+create-load-csv:
+	. $(VENV_PATH_MELTANO) && \
+	cd metano-project && \
+	meltano add loader target-csv && \
+	meltano config target-csv set destination_path $(OUTPUT_DIR)
+
 	
 # Executar o pipeline de ETL para salvar em Parquet
 run-etl:
-	$(ACTIVATE_VENV_MELTANO) \
-	meltano elt tap-csv target-parquet && \
-	meltano elt tap-postgres target-parquet
+	. $(VENV_PATH_MELTANO) \
+	cd metano-project && \
+	meltano elt tap-csv target-csv-csv && \
+	meltano elt tap-postgres target-postgres-csv
 	
+
 run-nuvem:
 	meltano elt tap-parquet target-postgres
 
@@ -176,3 +189,4 @@ airflow-docker:
 airflow-process:
 	lsof -i :8793 && \
 	kill -9 PID 
+#utilizar SUDO
